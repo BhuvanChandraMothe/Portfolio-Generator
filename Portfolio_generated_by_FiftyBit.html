@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Harshith Bollu - Portfolio</title>
+    <style>
+        /* CSS Styles */
+        :root {
+            --bg-color: #f9f9f9;
+            --text-color: #333;
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #333;
+            --text-color: #f9f9f9;
+            --primary-color: #66b3ff;
+            --secondary-color: #a7acb1;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--bg-color);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav h1 {
+            margin: 0;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-item h3 {
+            margin: 0;
+            color: var(--secondary-color);
+        }
+
+        .experience-item p {
+            margin: 5px 0;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skills-list li {
+            background-color: var(--secondary-color);
+            color: #fff;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        .certifications-list li {
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: var(--secondary-color);
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 100;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+
+            .skills-list {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <button class="theme-toggle">Toggle Theme</button>
+
+    <nav>
+        <h1>Sri Harshith Bollu</h1>
+    </nav>
+
+    <div class="container">
+        <section id="summary">
+            <h2>Summary</h2>
+            <p>Results-driven IOS Developer with expertise in application development, UI/UX design, and software optimization.
+                Skilled in React, Python, Java, Swift, and SQL, with experience improving application stability, enhancing user
+                experience, and streamlining development workflows. Passionate about building scalable, high-performance software
+                solutions that drive efficiency and innovation. A strong collaborator with experience working in Agile environments,
+                debugging, and integrating analytics to optimize performance. Recognized for delivering impactful solutions and
+                improving team productivity.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>IOS Development</li>
+                <li>Mobile Application Development</li>
+                <li>DBMS</li>
+                <li>Artificial Intelligence</li>
+                <li>Application Testing</li>
+                <li>Data Structures</li>
+                <li>Web Development</li>
+                <li>Swift</li>
+                <li>Python</li>
+                <li>C++</li>
+                <li>C</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>React</li>
+                <li>GitHub</li>
+                <li>Git</li>
+                <li>Adobe Assurance</li>
+                <li>PowerBi</li>
+                <li>MS Word</li>
+                <li>MS Excel</li>
+                <li>MS PowerPoint</li>
+
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Analyst, DBS Bank</h3>
+                <p>09 2023 – Present</p>
+                <ul>
+                    <li>Offloaded native screens and integrated React screens into the digibank application (IOS) for the features to
+                        ensure uniformity across multiple platforms and reduce developers’ effort by 50% using an in-house SDK.</li>
+                    <li>Empowered real-time users with instantaneous access to updated features and content through React pages,
+                        promoting a responsive and immersive user experience. .</li>
+                    <li>Collaborated with cross-functional teams of 6-8 developers to identify and resolve software defects, employing
+                        debugging techniques and writing unit tests, resulting in 90% code coverage to enhance application stability.</li>
+                    <li>Contributed to the adoption of agile methodologies, utilizing Jira and Confluence, and improving team
+                        productivity by 15% through iterative development cycles.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Senior Officer, DBS Bank</h3>
+                <p>07 2022 – 09 2023</p>
+                <ul>
+                    <li>Developed in-house analytics SDKs facilitating teams across different regions (SG,IN,HK) to capture user
+                        journey flows effectively within Digibank apps using Swift.</li>
+                    <li>Streamlined the implementation Auto Tagging Framework to significantly reduce the developer time and effort
+                        by 92% and to maintain consistency across countries.</li>
+                    <li>Engineered a Performance Measure library, enabling app teams to measure and optimize performance metrics
+                        of user journeys within apps by leveraging Firebase events data.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Bachelor of Technology - Computer Science and Engineering</h3>
+                <p>Institute of Aeronautical Engineering</p>
+                <p>CGPA - 8.63</p>
+                <p>06 2018 – 04 2022</p>
+                <p>Hyderabad, India</p>
+            </div>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul class="certifications-list">
+                <li>Python Data Structures - Coursera</li>
+                <li>Generative AI Mastery - Coursera</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p><strong>Phone:</strong> +918328561927</p>
+                <p><strong>Email:</strong> sriharshit2000@gmail.com</p>
+                <p><strong>LinkedIn:</strong> Bollu Sri Harshith</p>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // JavaScript for Theme Toggle
+        const themeToggle = document.querySelector('.theme-toggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            if (currentTheme === 'dark') {
+                body.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        // Load theme from local storage
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            body.setAttribute('data-theme', 'dark');
+        }
+    </script>
+</body>
+</html>
